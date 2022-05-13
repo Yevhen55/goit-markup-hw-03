@@ -11,11 +11,11 @@
     --fon-footer-h1: #2F303A;
     --mail-tel: rgba(255, 255, 255, 0.6);
 }
-/* button {
+  /* button {  
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
-}*/
+     appearance: none; 
+     } */
 .link {
     text-decoration: none;
     color: inherit;
@@ -24,11 +24,7 @@
 ul {
     list-style: none;
 }
-
-/* разметка хедера  */
-/*логотип  */
-
-.text .visually-hidden { 
+.text .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -40,6 +36,10 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+/* разметка хедера  */
+/*логотип  */
+
+
 .header-list {border-bottom: 1px  solid var(--second-text-color);}
 .container {margin: 0 auto; padding-left: 15px;padding-right: 15px; width: 1200px;}
 .logo {
@@ -146,7 +146,7 @@ ul {
     color: var(--primary-text-color)
 }
 
-.list-btn .btn {
+ .btn {
     cursor: pointer;
 }
 
@@ -224,10 +224,14 @@ ul {
 
 /* студия  */
 /* btn */
+.section-btn .btn {
+    cursor: pointer;
+}
 .section-btn {
     background-color: var(--fon-footer-h1);
 }
-.section-btn .btn {cursor: pointer;}
+
+
 .text {
     font-family: 'Roboto';
     font-style: normal;
@@ -237,7 +241,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-color: var(--text-footer-textbtn)
+    color: var(--text-footer-textbtn)
 }
 
 .section-btn .btn {
@@ -252,7 +256,6 @@ color: var(--text-footer-textbtn)
     letter-spacing: 0.06em;
     color: var(--text-footer-textbtn);
     background-color: var(--focus-hover-active-color);
-    
 }
 
 /* benefits */
@@ -264,7 +267,40 @@ color: var(--text-footer-textbtn)
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    
+   
+}
+
+.list .section-list {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.list .list-list {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+/* benefits */
+.text-section {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
 }
 
 .list .section-list {
