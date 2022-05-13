@@ -11,7 +11,11 @@
     --fon-footer-h1: #2F303A;
     --mail-tel: rgba(255, 255, 255, 0.6);
 }
-
+/* button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}*/
 .link {
     text-decoration: none;
     color: inherit;
@@ -23,6 +27,24 @@ ul {
 
 /* разметка хедера  */
 /*логотип  */
+
+.text .visually-hidden { 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.header-list {border-bottom: 1px  solid var(--second-text-color);}
+.container {margin: 0 auto; padding-left: 15px;padding-right: 15px; width: 1200px;}
+.logo {
+    margin-right: 93px;
+}
 .logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -50,6 +72,24 @@ ul {
 }
 
 /* навигация */
+.site-nav {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
 .header-list .link:hover,
 .header-list .link:focus,
 .header-list .link.current {
@@ -64,17 +104,38 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.auth-nav {
+    margin-left: 331px;
+}
 
+.link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.auth-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.auth-nav .item+.item {
+    margin-left: 50px;
+}
+
+.auth-nav {
+    padding-left: 0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
 .auth-nav .link {
     color: var(--second-text-color);
 }
 
 /* btn */
-/* button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}*/
+
 .list-btn {
     font-family: 'Roboto';
     font-style: normal;
@@ -116,9 +177,8 @@ ul {
     color: var(--second-text-color);
 }
 
-.main .wh {
-    color: var(--text-footer-textbtn);
-}
+
+
 
 /* footer */
 
@@ -158,12 +218,16 @@ ul {
     color: var(--text-footer-textbtn)
 }
 
+
+
+
+
 /* студия  */
 /* btn */
 .section-btn {
     background-color: var(--fon-footer-h1);
 }
-
+.section-btn .btn {cursor: pointer;}
 .text {
     font-family: 'Roboto';
     font-style: normal;
@@ -173,7 +237,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--text-footer-textbtn)
+color: var(--text-footer-textbtn)
 }
 
 .section-btn .btn {
@@ -188,6 +252,7 @@ ul {
     letter-spacing: 0.06em;
     color: var(--text-footer-textbtn);
     background-color: var(--focus-hover-active-color);
+    
 }
 
 /* benefits */
@@ -199,7 +264,7 @@ ul {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--text-footer-textbtn);
+    
 }
 
 .list .section-list {
