@@ -3,6 +3,7 @@
 /* мыло  телефон  футер rgba(255, 255, 255, 0.6)  адресс #FFFFFF*/
 /* мыло  телефон  футер rgba(255, 255, 255, 0.6) */
 /* цвет кнопок и активных ссылок при наведении #2196F3 */
+/* цвет граунд команді #F5F4FA */
 :root {
     --primary-text-color: #212121;
     --second-text-color: #757575;
@@ -10,6 +11,7 @@
     --text-footer-textbtn: #FFFFFF;
     --fon-footer-h1: #2F303A;
     --mail-tel: rgba(255, 255, 255, 0.6);
+    --backgroundcolor-team: #F5F4FA ;
 }
   /* button {  
     -webkit-appearance: none;
@@ -31,7 +33,7 @@ ul {
 
 .header-list {border-bottom: 1px  solid var(--second-text-color);}
 .container {margin: 0 auto; padding-left: 15px;padding-right: 15px; width: 1200px;}
-.logo { margin-top: 25px; margin-bottom: 25px;
+ .nav .logo { margin-top: 25px; margin-bottom: 25px;
     margin-right: 93px;
 }
 .logo {
@@ -170,7 +172,10 @@ ul {
 
 
 /* footer */
+.address {margin-top: 20px;}
 
+.footer {padding-top: 60px; padding-bottom: 60px;}
+.footer-list .link-footer + .link-footer {margin-top: 9px;}
 .footer {
     background-color: var(--fon-footer-h1);
 }
@@ -190,7 +195,7 @@ ul {
     color: var(--text-footer-textbtn);
 }
 
-.ct .contact {
+ .contact { 
     color: var(--second-text-color)
 }
 
@@ -200,8 +205,7 @@ ul {
 }
 .footer-list {
     font-style: initial;
-    margin-top: 20px;
-    margin-bottom: 0;
+     margin-bottom: 0;
 }
 .footer .map {
     color: var(--text-footer-textbtn)
@@ -225,7 +229,11 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .section {padding-top: 94px; padding-bottom: 94px; padding-left: 0; padding-right: 0;}
+.hero {
+    padding-top: 0;padding-bottom: 0;
+}
 .hero .btn {margin-left: auto; margin-right: auto;}
 .text-hero {margin-top: 0; margin-bottom: 30px;}
 .section-btn .btn {
@@ -234,7 +242,9 @@ ul {
 .section .hero {
     background-color: var(--fon-footer-h1);
 }
-
+.paint {
+    padding-top: 0;
+}
 
 .text-hero {
     font-family: 'Roboto';
@@ -270,9 +280,19 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 } */
-.container .benefits {display: flex;}
 
- .text-section {
+.container .list-benefits {display: flex;}
+ul {padding-left: 0 ; margin-top: 0; margin-bottom: 0;}
+
+.list-benefits .items + .items {margin-left: 30px;}
+.items .subject {margin-top: 0; margin-bottom: 10px;}
+.items .subtitle {margin-top: 0; margin-bottom: 0; width: 270px;}
+.text-section {margin-top: 0; margin-bottom: 50px;}
+
+.list-img {display: flex;}
+.list-img .items + .items { margin-left: 30px;}
+.items .img {display: block;max-width: 100%; }
+.text-section {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -283,7 +303,7 @@ ul {
    
 }
 
-.list .subject {
+.list-benefits .subject {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -293,7 +313,7 @@ ul {
     text-transform: uppercase;
 }
 
-.list .subtitle {
+.list-benefits .subtitle {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -305,6 +325,13 @@ ul {
 }
 
 /* team */
+.container .team {display: flex;}
+.team .items + .items { margin-left: 30px;}
+ .team {background-color: var(--backgroundcolor-team);}
+ .items .card-team {padding-top: 30px; padding-bottom: 30px;text-align: center;}
+ .card-team .team-name {margin-top: 0; margin-bottom: 10px;}
+ .card-team .descripion {margin-top: 0;margin-bottom: 0;}
+
 .team .team-name {
     font-family: 'Roboto';
     font-style: normal;
